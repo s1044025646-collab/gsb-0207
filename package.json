@@ -1,0 +1,22 @@
+{
+  "name": "ideal-flash-backend",
+  "version": "1.0.0",
+  "description": "理想混合物气液闪蒸与泡露点计算后端 (API + CLI)",
+  "type": "module",
+  "bin": { "flash": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/fix-dist.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "tsx --test tests/*.test.ts",
+    "start": "node dist/cli.js serve",
+    "dev": "tsx src/cli.ts serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "demo:dev": "tsx src/cli.ts demo"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "components": [
+    {
+      "key": "benzene",
+      "name": "苯",
+      "cas": "71-43-2",
+      "antoine": { "a": 6.90565, "b": 1211.033, "c": 220.79, "tMinC": 8, "tMaxC": 103 }
+    },
+    {
+      "key": "toluene",
+      "name": "甲苯",
+      "cas": "108-88-3",
+      "antoine": { "a": 6.95464, "b": 1344.8, "c": 219.48, "tMinC": 6, "tMaxC": 137 }
+    }
+  ]
+}
